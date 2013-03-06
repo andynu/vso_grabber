@@ -1,0 +1,35 @@
+
+Download a set of images from
+  http://sdac.virtualsolar.org/cgi/search
+
+  check time
+  check insturment
+  generate
+
+  check AIA (under JSOC)
+  set timerange
+    start: date, time=00:00
+    end: same date, time=00:01
+  search
+
+  bounce page
+
+  results screen
+
+  min spectral ranges (check first instance of)
+    94
+    335
+    193
+    131
+    171
+    211
+
+  request data
+
+  request data (again, url-file)
+
+  
+  download each link
+
+
+  http://sao.virtualsolar.org/cgi-bin/VSO/drms_export.cgi?series=aia__lev1;record=94_1139270438-1139270438
