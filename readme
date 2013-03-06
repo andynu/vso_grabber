@@ -1,6 +1,0 @@
-Download a set of images from
-  http://sdac.virtualsolar.org/cgi/search
-
-ruby ./lib/sun_grabber.rb <year>
-
-outputs curl commands to download images for the first minute of the first day of each month for the a preset range of spectral images

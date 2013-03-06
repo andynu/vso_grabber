@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -w
+#!/usr/bin/env ruby
 require 'mechanize'
 require 'chronic'
 
@@ -8,7 +8,7 @@ require 'chronic'
 #
 # ./sun_grabber.rb <year>
 
-class SunGrabber
+class VsoGrabber
   def initialize
     @agent = Mechanize.new
     @agent.user_agent_alias = 'Mac Safari'
@@ -112,6 +112,6 @@ if $0 == __FILE__
   1.upto(12) do |m|
     month = "%02d" % [m]
     puts "# #{month}"
-    SunGrabber.new.get(Chronic.parse("#{year}-#{month}-01"))
+    VsoGrabber.new.get(Chronic.parse("#{year}-#{month}-01"))
   end
 end
